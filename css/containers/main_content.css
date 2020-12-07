@@ -1,0 +1,74 @@
+.main__content{
+    padding: 90px 90px;
+    height: max-content;
+    background-color: #f5f6fa;
+    position: absolute;
+    z-index: -2;
+    top: 0;
+    width: 100%;
+    padding-bottom: 0;
+}
+
+.go_back{
+    color: rgb(185, 185, 185);
+    text-decoration: none;
+}
+
+.header{
+    display: flex;
+    padding: 10px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__text{
+    font-size: 20px;
+    font-weight: bold;
+}
+.header__text a{
+   color: #865a97;
+   text-decoration: none;
+   
+}
+
+.header__functions{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.header__selectbox label{
+    font-size: 13px;
+}
+
+.header__selectbox select{
+    padding: 5px;
+    width: 150px;
+    font-size: 13px;
+    outline: none;
+}
+
+.header__view a{
+    padding: 5px;
+}
+
+.header__view a i{
+    font-size: 20px;
+    color: #5c35e5;
+}
+
+.content {
+    padding-left: 20px;
+    margin-top: 20px;
+}
+
+.contact_rate{
+    padding: 30px 0;
+}
+
+.contact_rate__head h1{
+    font-size: 22px;
+    color: #ccc;
+    font-style: italic;
+    font-weight: lighter;
+}

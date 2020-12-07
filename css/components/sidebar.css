@@ -1,0 +1,39 @@
+.sidebar{
+    height: 100%;
+    background-color: #ffffff;
+    width: max-content;
+    position: fixed;
+    top: 0;
+    display: grid;
+    place-items: center;
+    z-index: -1;
+    border-right: 0.2px solid #ccc;
+}
+
+.sidebar__list{
+    list-style: none;
+}
+
+
+.sidebar__item{
+    padding: 5px 20.6px;
+}
+
+.sidebar__item:hover {
+    border-right: 2px solid #8857b0;
+}
+
+.sidebar__item:hover a{
+   color: #8857b0;
+}
+
+.sidebar__item a{
+    color: rgb(97, 96, 96);
+ }
+
+.sidebar__item--active{
+    border-right: 2px solid #8857b0;
+}
+.sidebar__item--active a{
+    color: #8857b0;
+}
