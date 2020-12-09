@@ -1,11 +1,18 @@
+.card_image{
+    display: grid;
+    place-items: center;
+}
 .card_image img{
     width: 80px;
     height: 80px;
     border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
 }
 
 .padding_card{
     padding: 20px 20px;
+    flex: 2.3;
 }
 
 .card {
@@ -28,18 +35,24 @@
     width: 0;
 }
 
+.color img{
+    margin: 50px !important;
+    margin-left: 0px !important;
+}
+
 .card__content{
     padding: 10px 30px;
 }
 
 .progress{
     flex: 2;
-    
+    padding: 20px 0;
 }
 
 .progress__head{
     color: #ccc;
     font-weight: bold;
+    margin-bottom: 20px;
 }
 
 .progres__line{
@@ -53,7 +66,7 @@
     width:30%;
     height:2px;
     display: block;
-    background-color: green;
+    background-color: #17c00b;
 }
 
 .card__info{
@@ -61,10 +74,14 @@
 }
 
 .dot{
-    width: 8px;
-    height: 8px;
-    background-color: green;
+    width: 10px;
+    height: 10px;
+    background-color: #17c00b;
     border-radius: 50%;
+}
+
+.middle,.start{
+    color: #ccc;
 }
 
 .center {
@@ -87,31 +104,39 @@
 }
 
 .card__info{
-    margin-left: 20px;
+    margin-left: 10px;
+    padding: 15px 10px;
 }
 
 .card_info_text{
     color: #ccc;
     font-weight: bold;
+    margin: 10px 0;
 }
 
 .card_info_data{
     color: black;
-    margin-left: 20px;
+    margin-left: 40px;
 }
 
 
 .card__data{
     padding: 50px 0;
-    width:35%;
     display: grid;
     place-items: center;
     background-color: #f4f4fe;
+    flex: 0.5;
+    margin-left: -40px;
 }
+
+.data {
+    flex: 2;
+}
+
 
 .name{
     font-weight: bold;
-    font-size: 15px;
+    font-size: 20px;
     color: indigo;
 }
 
@@ -142,10 +167,82 @@
     position: relative;
 }
 
-.color img{
-    margin-top: 50px;
-}
+
 
 .card_image.color {
     left: -40px !important;
+}
+
+
+
+.orange{
+    color: #fb9502;
+}
+
+.gray {
+    color: #ccc;
+}
+
+table {
+    font-weight: bold;
+}
+
+table td{
+    padding: 5px 0 !important;
+}
+
+.margin-table{
+    padding-left: 10px !important;
+}
+
+
+.card__info{
+    background-color: #ffffff;
+    box-shadow: 2px 3px 10px;
+    box-shadow:  15px 15px 40px #d4d4d4, 
+             -15px -15px 40px #ffffff;
+}
+
+
+
+
+@media(max-width:1098px){
+    .progress{
+        flex: 1 !important;
+    }
+    
+    .card__data{
+        flex: 1.9 !important;
+    }
+
+    .progress{
+        font-size: 12px;
+    }
+    table{
+        font-size: 12px;
+    }
+}
+
+
+@media(max-width:825px){
+    .card {
+        display: flex;
+        flex-direction: column;
+    }
+    .card_image{
+        width: 100%;
+        left: 0;
+    }
+    .card_image.color {
+        left: 0 !important;
+    }
+    .card_image.color{
+        background-color: #f4f4fe;
+        width: 100%;
+    }
+    
+    .color img{
+        margin: 0 !important;
+        margin-left: 0px !important;
+    }
 }

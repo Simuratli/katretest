@@ -1,6 +1,6 @@
 .alert{
     width: 100%;
-    padding: 7px 10px;
+    padding: 10px 10px;
     display: flex;
     align-items: center;
     gap: 15px;
@@ -9,5 +9,5 @@
 
 .alert--success{
     background-color: #c1f6c2;
-    border-radius: 5px;
+    border-radius: 2px;
 }

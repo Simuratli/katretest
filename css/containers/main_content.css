@@ -1,5 +1,6 @@
 .main__content{
-    padding: 90px 90px;
+    padding: 90px 110px;
+    padding-right: 60px;
     height: max-content;
     background-color: #f5f6fa;
     position: absolute;
@@ -12,6 +13,7 @@
 .go_back{
     color: rgb(185, 185, 185);
     text-decoration: none;
+    font-size: 12px;
 }
 
 .header{
@@ -22,9 +24,18 @@
 }
 
 .header__text{
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
 }
+
+.header__text span {
+    font-weight: lighter;
+}
+
+.nav__search span{
+    font-weight: bold;
+}
+
 .header__text a{
    color: #865a97;
    text-decoration: none;
@@ -38,7 +49,9 @@
 }
 
 .header__selectbox label{
-    font-size: 13px;
+    font-size: 10px;
+    color: gray;
+    margin-right: 10px;
 }
 
 .header__selectbox select{
@@ -46,6 +59,9 @@
     width: 150px;
     font-size: 13px;
     outline: none;
+    border: 0.1px solid rgb(207, 207, 207) !important;
+    font-size: 10px !important;
+    color: gray;
 }
 
 .header__view a{
@@ -58,17 +74,52 @@
 }
 
 .content {
-    padding-left: 20px;
+    padding-left: 40px;
     margin-top: 20px;
 }
 
 .contact_rate{
-    padding: 30px 0;
+    padding: 50px 0;
+    padding-bottom: 20px;
 }
 
 .contact_rate__head h1{
-    font-size: 22px;
-    color: #ccc;
+    font-size: 30px;
+    color: rgb(167, 167, 167);
     font-style: italic;
-    font-weight: lighter;
+    font-weight:500;
 }
+
+.bold {
+    font-weight: bold;
+}
+
+
+@media(max-width:1098px){
+    .content {
+        padding-left: 0;
+        margin-top: 20px;
+    }
+    .card__content{
+        padding: 0;
+    }
+    .main__content{
+        padding: 90px 90px;
+        padding-right: 60px;
+        height: max-content;
+        
+    }
+
+    .header{
+        flex-direction: column;
+    }
+    .header__view{
+        flex-direction: row;
+        display: flex;
+    }
+
+    
+}
+
+
+

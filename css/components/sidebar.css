@@ -17,6 +17,7 @@
 
 .sidebar__item{
     padding: 5px 20.6px;
+    margin: 10px 0;
 }
 
 .sidebar__item:hover {
