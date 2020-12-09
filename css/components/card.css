@@ -207,6 +207,10 @@ table td{
 
 
 @media(max-width:1098px){
+    .card_image.color{
+        background-color: transparent;
+        width: 0;
+    }
     .progress{
         flex: 1 !important;
     }
