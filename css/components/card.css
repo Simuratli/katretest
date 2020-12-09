@@ -207,6 +207,9 @@ table td{
 
 
 @media(max-width:1098px){
+    .card__data{
+        margin-left: 0;
+    }
     .card_image.color{
         background-color: transparent;
         width: 0;
@@ -244,7 +247,7 @@ table td{
         background-color: #f4f4fe;
         width: 100%;
     }
-    
+  
     .color img{
         margin: 0 !important;
         margin-left: 0px !important;
